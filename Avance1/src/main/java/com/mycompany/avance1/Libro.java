@@ -9,14 +9,21 @@ package com.mycompany.avance1;
  * @author sebas
  */
 public class Libro {
+
+     private int id;
     private String titulo;
     private String autor;
     private boolean disponible;
 
-    public Libro(String titulo, String autor) {
+    public Libro(int id, String titulo, String autor, boolean disponible) {
+        this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.disponible = true;
+        this.disponible = disponible;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitulo() {
@@ -31,12 +38,7 @@ public class Libro {
         return disponible;
     }
 
-    public void reservar() {
-        this.disponible = false;
-    }
-
-    public void devolver() {
-        this.disponible = true;
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
     }
 }
-
