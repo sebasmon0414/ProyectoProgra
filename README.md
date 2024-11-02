@@ -1,1 +1,1 @@
-Cliente - Servidor: Proyectp
+Cliente - Servidor: Proyecto
